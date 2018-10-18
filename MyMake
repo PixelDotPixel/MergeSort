@@ -1,0 +1,8 @@
+all:
+	g++ -std=c++11 -o assign1.exe main.cpp Person.cpp
+main.o: main.cpp
+	g++ main.cpp -std=c++11 -c
+Person.o: Person.cpp
+	g++ Person.cpp -std=c++11 -c
+clean:
+	del assign1.exe
